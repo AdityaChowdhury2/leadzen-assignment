@@ -1,0 +1,9 @@
+p {
+    margin-bottom: 0;
+}
+
+@media screen and (min-width:480px) {
+    .small-container {
+        margin-top: 3px;
+    }
+}
