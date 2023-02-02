@@ -44,53 +44,53 @@ export const SingleItem = ({ item }) => {
 						</Button>
 					</div>
 				</div>
-			</div>
-			<Collapse in={open}>
-				<div id="description" className="mt-3">
-					<Card body className="p-2 container">
-						<div>
-							<h6>Description</h6>
-							<p>
-								Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Deleniti adipisci fugit sed!
-								Ullam veritatis facilis non temporibus, id
-								labore quo? Nam possimus illum nulla ipsam
-								explicabo nemo error repellendus vero!
-							</p>
-						</div>
-						<div className="row mt-3">
-							<div className="col-md-4">
-								<h6>Contact Person</h6>
-								<p>{name}</p>
-								<h6>Designation</h6>
-								<p>Proprietor</p>
-								<h6>Email</h6>
-								<p>{email}</p>
-								<h6>Phones</h6>
-								<p>{fixingPhoneNumber(phone)}</p>
-							</div>
-							<div className="col-md-8">
-								<h6>Address</h6>
+				<Collapse in={open}>
+					<div id="description" className="mt-3">
+						<Card body className="p-2 container">
+							<div>
+								<h6>Description</h6>
 								<p>
-									{street +
-										" " +
-										suite +
-										" " +
-										city +
-										" " +
-										zipcode}
+									Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Deleniti adipisci fugit
+									sed! Ullam veritatis facilis non temporibus,
+									id labore quo? Nam possimus illum nulla
+									ipsam explicabo nemo error repellendus vero!
 								</p>
-								<h6>City</h6>
-								<p>{city}</p>
-								<h6>Pin-code</h6>
-								<p>{zipcode}</p>
-								<h6>Country</h6>
-								<p>U.S.A</p>
 							</div>
-						</div>
-					</Card>
-				</div>
-			</Collapse>
+							<div className="row mt-3">
+								<div className="col-md-4">
+									<h6>Contact Person</h6>
+									<p>{name}</p>
+									<h6>Designation</h6>
+									<p>Proprietor</p>
+									<h6>Email</h6>
+									<p>{email}</p>
+									<h6>Phones</h6>
+									<p>{fixingPhoneNumber(phone)}</p>
+								</div>
+								<div className="col-md-8">
+									<h6>Address</h6>
+									<p>
+										{street +
+											" " +
+											suite +
+											" " +
+											city +
+											" " +
+											zipcode}
+									</p>
+									<h6>City</h6>
+									<p>{city}</p>
+									<h6>Pin-code</h6>
+									<p>{zipcode}</p>
+									<h6>Country</h6>
+									<p>U.S.A</p>
+								</div>
+							</div>
+						</Card>
+					</div>
+				</Collapse>
+			</div>
 		</>
 	);
 };
