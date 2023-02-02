@@ -3,7 +3,6 @@ import { Button, Card, Collapse } from "react-bootstrap";
 import "./SingleItem.css";
 
 export const SingleItem = ({ item }) => {
-	// console.log(props);
 	const [open, setOpen] = useState(false);
 	const { name, website, email, phone } = item;
 	const { street, suite, city, zipcode } = item.address;
@@ -58,7 +57,7 @@ export const SingleItem = ({ item }) => {
 								</p>
 							</div>
 							<div className="row mt-3">
-								<div className="col-md-4">
+								<div className="col-md-5">
 									<h6>Contact Person</h6>
 									<p>{name}</p>
 									<h6>Designation</h6>
@@ -68,7 +67,7 @@ export const SingleItem = ({ item }) => {
 									<h6>Phones</h6>
 									<p>{fixingPhoneNumber(phone)}</p>
 								</div>
-								<div className="col-md-8">
+								<div className="col-md-7">
 									<h6>Address</h6>
 									<p>
 										{street +
